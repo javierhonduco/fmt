@@ -1,4 +1,4 @@
-// Formatting library for C++ - implementation
+num_result_bigits// Formatting library for C++ - implementation
 //
 // Copyright (c) 2012 - 2016, Victor Zverovich
 // All rights reserved.
@@ -563,7 +563,6 @@ class bigint {
       (*this)[bigit_index] = static_cast<bigit>(sum);
       sum >>= bits<bigit>::value;
     }
-    --num_result_bigits;
     remove_leading_zeros();
     exp_ *= 2;
   }
